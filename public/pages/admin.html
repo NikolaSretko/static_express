@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin page</title>
+  </head>
+  <body>
+    <h1>Neuen Charakter hinzufügen</h1>
+    <form action="/api/persons" method="post">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="description">Beschreibung:</label><br />
+      <textarea id="description" name="description" required></textarea><br />
+
+      <input type="submit" value="Charakter hinzufügen" />
+    </form>
+  </body>
+</html>
